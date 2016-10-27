@@ -4,7 +4,7 @@ var express = require('express'),
     mongoose = require('mongoose'),
     bodyParser = require('body-parser');
 
-mongoose.Promise = global.Promise;
+//mongoose.Promise = global.Promise;
 
 var db;
 if (process.env.ENV == 'Test')
