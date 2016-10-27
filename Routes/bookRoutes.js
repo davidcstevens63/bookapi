@@ -3,7 +3,7 @@ var express = require('express');
 var routes = function(Book){
 
     var bookRouter = express.Router();
-    var bookController = require('../controllers/bookController.js')(Book);
+    var bookController = require('../Controllers/bookController.js')(Book);
 
     bookRouter.route('/')
         .post(bookController.post)
